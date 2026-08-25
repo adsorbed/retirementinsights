@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Retirement Insights | Making the Most of Your Retirement</title>
+<meta
+  name="description"
+  content="Independent education on turning your retirement into a retirement income that lasts: allowances, timing, tax and legacy."
+>
+<link rel="canonical" href="https://yourretirementinsights.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Your Retirement Insights">
+<meta property="og:url" content="https://yourretirementinsights.com/">
+<meta property="og:title" content="Your Retirement Insights | Making the Most of Your Retirement">
+<meta property="og:description" content="Independent education on turning your retirement into a retirement income that lasts: allowances, timing, tax and legacy.">
+<meta property="og:image" content="https://yourretirementinsights.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your Retirement Insights">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Retirement Insights | Making the Most of Your Retirement">
+<meta name="twitter:description" content="Independent education on turning your retirement into a retirement income that lasts: allowances, timing, tax and legacy.">
+<meta name="twitter:image" content="https://yourretirementinsights.com/assets/og-image.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #241e10;
+  --ink-soft: #675a31;
+  --paper: rgba(255, 255, 255, 0.8);
+  --line: rgba(84, 64, 12, 0.16);
+  --gold: #b99928;
+  --gold-deep: #7d6512;
+  --gold-soft: #e2c768;
+  --shadow: 0 24px 60px rgba(84, 64, 12, 0.14);
+  --radius-xl: 30px;
+  --radius-lg: 22px;
+  --max: 1180px;
+  --wide: 1600px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(185, 153, 40, 0.22), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(125, 101, 18, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffcf4 0%, #f8f1dc 42%, #fcf8ef 100%);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.35;
+}
+
+.site-shell {
+  overflow: clip;
+}
+
+/* ---------- navigation ---------- */
+
+.nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 16px 28px 0;
+}
+
+.nav {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 11px 14px 11px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(250, 245, 237, 0.82);
+  backdrop-filter: blur(16px);
+  border-radius: 999px;
+  box-shadow: 0 18px 40px rgba(17, 32, 50, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The logo file is trimmed to the artwork, so this height is what you see. */
+.brand img {
+  display: block;
+  width: auto;
+  height: 62px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--gold);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible,
+.button-primary:hover,
+.button-primary:focus-visible {
+  transform: translateY(-1px);
+  background: #c7a534;
+}
+
+/* ---------- buttons ---------- */
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.button-primary {
+  background: var(--gold);
+  color: #fff;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-1px);
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  max-width: var(--wide);
+  margin: 18px auto 0;
+  padding: 0 28px;
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: min(600px, calc(100vh - 150px));
+  padding: 44px 54px;
+  border-radius: 40px;
+  background:
+    linear-gradient(135deg, rgba(95, 73, 12, 0.96), rgba(185, 153, 40, 0.88)),
+    linear-gradient(120deg, rgba(255, 244, 206, 0.16), transparent 42%);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.hero-card::before,
+.hero-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.hero-card::before {
+  width: 300px;
+  height: 300px;
+  right: -70px;
+  top: -60px;
+  background: rgba(228, 197, 150, 0.16);
+}
+
+.hero-card::after {
+  width: 240px;
+  height: 240px;
+  left: 58%;
+  bottom: -110px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(2rem, 3.1vw, 3rem);
+  line-height: 1.02;
+  font-weight: 700;
+  margin: 14px 0 16px;
+  max-width: 17ch;
+  text-wrap: balance;
+}
+
+.hero-copy p {
+  max-width: 52ch;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.hero-points {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-points li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  box-shadow: 0 0 0 5px rgba(228, 197, 150, 0.12);
+}
+
+.hero-panel {
+  padding: 24px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hero-panel h2 {
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.hero-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 11px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-stat:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero-stat strong {
+  min-width: 40px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold-soft);
+}
+
+/* ---------- trust strip ---------- */
+
+.trust-strip {
+  max-width: var(--wide);
+  margin: 22px auto 0;
+  padding: 0 28px;
+}
+
+.trust-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 22px 26px;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(17, 32, 50, 0.08);
+  box-shadow: 0 16px 30px rgba(17, 32, 50, 0.06);
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+/* ---------- sections ---------- */
+
+.section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 88px 28px 0;
+}
+
+.section-head {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.section-head h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.0;
+  font-weight: 700;
+  margin: 14px 0;
+  text-wrap: balance;
+}
+
+.section-head p {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+.about-grid,
+.process-grid,
+.resource-grid,
+.faq-grid,
+.insight-grid,
+.pillar-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.about-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: stretch;
+}
+
+.glass,
+.card {
+  border: 1px solid rgba(17, 32, 50, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 32px rgba(17, 32, 50, 0.06);
+}
+
+.glass {
+  border-radius: 28px;
+  padding: 32px;
+}
+
+.story-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.68)),
+    radial-gradient(circle at top right, rgba(198, 146, 76, 0.12), transparent 32%);
+}
+
+.story-card blockquote {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.05;
+  color: var(--gold);
+  margin: 18px 0;
+}
+
+.story-card p,
+.info-list li p,
+.card p,
+.faq-item p,
+.step p,
+.cta-panel p,
+footer p {
+  color: var(--ink-soft);
+}
+
+.info-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.info-list li {
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  background: rgba(220, 233, 224, 0.48);
+}
+
+.info-list li strong,
+.card h3,
+.step h3,
+.faq-item h3,
+.cta-panel h2 {
+  display: block;
+  font-size: 1.06rem;
+  margin-bottom: 8px;
+}
+
+.pillar-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: rgba(185, 153, 40, 0.12);
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.insight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.insight-card {
+  min-height: 100%;
+}
+
+.tag-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(185, 153, 40, 0.12);
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.read-more::after {
+  content: "→";
+  transition: transform 180ms ease;
+}
+
+.insight-card:hover .read-more::after,
+.resource-card:hover .read-more::after {
+  transform: translateX(3px);
+}
+
+.resource-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.resource-card {
+  padding: 30px;
+}
+
+.resource-card.featured {
+  background:
+    linear-gradient(135deg, rgba(125, 101, 18, 0.96), rgba(185, 153, 40, 0.88)),
+    linear-gradient(90deg, rgba(255, 248, 220, 0.18), transparent 45%);
+  color: #fff;
+}
+
+.resource-card.featured p,
+.resource-card.featured .meta {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.resource-card.featured .read-more {
+  color: #fff;
+}
+
+.resource-card.featured .tag {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.process-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.step {
+  position: relative;
+  padding: 30px 24px 24px;
+  border-radius: 26px;
+  border: 1px solid rgba(17, 32, 50, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.step-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(185, 153, 40, 0.12), rgba(226, 199, 104, 0.28));
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faq-item {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 32, 50, 0.08);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.faq-item a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cta {
+  padding-bottom: 92px;
+}
+
+.cta-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 42px;
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(247, 239, 210, 0.96), rgba(255, 251, 239, 0.92)),
+    radial-gradient(circle at top right, rgba(185, 153, 40, 0.16), transparent 32%);
+  border: 1px solid rgba(17, 32, 50, 0.08);
+}
+
+.cta-panel .button-secondary {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--ink);
+}
+
+.cta-panel .button-secondary:hover,
+.cta-panel .button-secondary:focus-visible {
+  border-color: rgba(185, 153, 40, 0.36);
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  padding: 0 28px 36px;
+}
+
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px 0 0;
+  border-top: 1px solid rgba(17, 32, 50, 0.1);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 22px;
+}
+
+.footer-brand {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-inner p {
+  font-size: 0.88rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  justify-content: flex-end;
+  align-content: start;
+  color: var(--ink-soft);
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--gold);
+}
+
+/* ---------- enquiry modal ---------- */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(36, 30, 16, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.modal-card {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 34px;
+  border-radius: 28px;
+  background: #fffcf4;
+  box-shadow: 0 40px 90px rgba(36, 30, 16, 0.35);
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  background: rgba(185, 153, 40, 0.12);
+  color: var(--ink);
+}
+
+.modal-card h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.85rem;
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 12px 0 8px;
+  max-width: 20ch;
+  text-wrap: balance;
+}
+
+.modal-card > p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23675a31' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.modal .button-primary {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-note {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.form-note a {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-error {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(168, 46, 32, 0.08);
+  color: #8c2b1c;
+  font-size: 0.86rem;
+}
+
+.form-error.is-shown {
+  display: block;
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 14px 0 6px;
+}
+
+.form-success.is-shown {
+  display: block;
+}
+
+.form-success .tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: rgba(185, 153, 40, 0.14);
+  color: var(--gold);
+  font-size: 1.7rem;
+}
+
+/* ---------- reveal ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 1080px) {
+  .hero-card {
+    min-height: 0;
+    padding: 40px 30px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .trust-card,
+  .pillar-grid,
+  .insight-grid,
+  .resource-grid,
+  .process-grid,
+  .faq-grid,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid { gap: 30px; }
+  .hero-copy h1 { font-size: clamp(2rem, 5vw, 2.8rem); max-width: none; }
+}
+
+@media (max-width: 820px) {
+  .nav {
+    border-radius: 30px;
+    padding: 12px 12px 12px 18px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    gap: 10px 16px;
+    font-size: 0.84rem;
+  }
+
+  .section { padding-top: 68px; }
+
+  .glass,
+  .card,
+  .faq-item,
+  .step,
+  .cta-panel { padding: 24px; }
+
+  .footer-links { justify-content: flex-start; }
+}
+
+@media (max-width: 560px) {
+  .nav-wrap { padding: 10px 14px 0; }
+
+  .nav {
+    position: relative;
+    padding: 10px 10px 10px 14px;
+    border-radius: 22px;
+    gap: 10px;
+  }
+
+  .brand { flex: 1 1 auto; }
+  .brand img { height: 34px; }
+  .nav-links { display: none; }
+
+  .nav-cta {
+    order: 2;
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: 0.8rem;
+  }
+
+  .nav-menu {
+    display: block;
+    position: relative;
+    order: 3;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(84, 64, 12, 0.14);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--ink);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .nav-toggle::-webkit-details-marker { display: none; }
+
+  .nav-toggle span,
+  .nav-toggle::before,
+  .nav-toggle::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 999px;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .nav-toggle span { margin: 4px 0; }
+  .nav-menu[open] .nav-toggle::before { transform: translateY(6px) rotate(45deg); }
+  .nav-menu[open] .nav-toggle span { opacity: 0; }
+  .nav-menu[open] .nav-toggle::after { transform: translateY(-6px) rotate(-45deg); }
+
+  .nav-dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    width: min(220px, calc(100vw - 28px));
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid rgba(84, 64, 12, 0.12);
+    background: rgba(255, 251, 242, 0.96);
+    box-shadow: 0 20px 40px rgba(84, 64, 12, 0.16);
+    backdrop-filter: blur(14px);
+  }
+
+  .nav-dropdown a {
+    display: block;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  .nav-dropdown a:hover,
+  .nav-dropdown a:focus-visible {
+    background: rgba(185, 153, 40, 0.1);
+    color: var(--ink);
+  }
+
+  .hero,
+  .trust-strip,
+  .section,
+  footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero { margin-top: 14px; }
+
+  .hero-card {
+    padding: 30px 20px;
+    border-radius: 26px;
+  }
+
+  .button-row { flex-direction: column; align-items: stretch; }
+  .button-primary, .button-secondary { width: 100%; }
+
+  .eyebrow { gap: 8px; font-size: 0.62rem; letter-spacing: 0.17em; }
+  .eyebrow::before { width: 22px; }
+
+  .hero-copy h1 { font-size: clamp(1.9rem, 8vw, 2.4rem); margin: 12px 0 14px; }
+  .hero-copy p { font-size: 0.94rem; }
+  .hero-panel { padding: 20px 18px; border-radius: 22px; }
+
+  .trust-card { padding: 18px; border-radius: 22px; }
+  .section-head h2 { font-size: 1.9rem; }
+  .story-card blockquote { font-size: 1.4rem; }
+
+  .section-head p,
+  .card p,
+  .faq-item p,
+  .step p,
+  .cta-panel p,
+  footer p { font-size: 0.94rem; }
+
+  .modal { padding: 14px; }
+  .modal-card { padding: 26px 20px; border-radius: 22px; }
+  .modal-card h2 { font-size: 1.5rem; }
+  .field-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="site-shell">
+
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Your Retirement Insights home">
+        <img src="assets/logo.png" alt="Your Retirement Insights logo">
+      </a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#about">Approach</a>
+        <a href="#insights">Briefings</a>
+        <a href="#resources">Guides</a>
+        <a href="#faq">Questions</a>
+      </div>
+      <button class="nav-cta" type="button" data-open-form data-resource="General enquiry">Get access</button>
+      <details class="nav-menu">
+        <summary class="nav-toggle" aria-label="Open navigation menu"><span></span></summary>
+        <div class="nav-dropdown">
+          <a href="#about">Approach</a>
+          <a href="#insights">Briefings</a>
+          <a href="#resources">Guides</a>
+          <a href="#faq">Questions</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Making the most of your retirement</span>
+            <h1>Your retirement savings are only half the story.</h1>
+            <p>
+              Most people spend their working lives focused on one number. What actually decides the retirement you get is how
+              that pot turns into income: how it is structured, when you draw it, and how much of it you keep. That is where
+              the difference is made.
+            </p>
+            <ul class="hero-points">
+              <li>Using your tax-advantaged accounts deliberately, not by accident.</li>
+              <li>Drawing from the right pots, in the right order.</li>
+              <li>Planning early enough that the best options are still open.</li>
+            </ul>
+            <div class="button-row" style="margin-top:26px;">
+              <button class="button-primary" type="button" data-open-form data-resource="Hero">Get access</button>
+              <a class="button-secondary" href="#about">See what we cover</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="What you will find here">
+            <h2>What you'll find here</h2>
+            <div class="hero-stat">
+              <strong>01</strong>
+              <span>Plain explanation of retirement accounts, tax and income, aimed at one thing: getting more out of your retirement.</span>
+            </div>
+            <div class="hero-stat">
+              <strong>02</strong>
+              <span>Guides, checklists and planning tools you can actually use.</span>
+            </div>
+            <div class="hero-stat">
+              <strong>03</strong>
+              <span>No products, no sales, and no personal recommendations.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="trust-card reveal">
+        <div class="trust-item">
+          <strong>Commercially neutral</strong>
+          <p>We don't sell products and we don't manage money, so nothing here is written to move you toward a sale.</p>
+        </div>
+        <div class="trust-item">
+          <strong>Written for the decision</strong>
+          <p>Each piece is built around a choice you will actually have to make, not around a topic that sounds interesting.</p>
+        </div>
+        <div class="trust-item">
+          <strong>Clear about the limits</strong>
+          <p>Education takes you a long way. We say plainly where it stops and personal advice has to begin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our approach</span>
+        <h2>Independent insight for people making serious financial decisions.</h2>
+        <p>
+          Your Retirement Insights exists because retirement education is usually either too shallow to be useful or too technical to
+          be readable. We aim for the space in between: enough detail to change what you do, written so you can follow it.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass story-card reveal">
+          <span class="eyebrow">Our perspective</span>
+          <blockquote>
+            “The costliest retirement decisions are rarely dramatic. They are quiet, reversible for a while, and then suddenly not.”
+          </blockquote>
+          <p>
+            Our aim is to help you understand the trade-offs behind each choice, recognise which ones have a deadline attached,
+            and arrive at any conversation about advice already knowing what you want to ask.
+          </p>
+        </article>
+
+        <ul class="info-list reveal">
+          <li>
+            <strong>No unnecessary noise</strong>
+            <p>Useful explanation over jargon, marketing pressure, or generic one-size-fits-all narratives.</p>
+          </li>
+          <li>
+            <strong>Built for thoughtful readers</strong>
+            <p>For people who want to understand their options properly before they act on any of them.</p>
+          </li>
+          <li>
+            <strong>Strategy before product</strong>
+            <p>Retirements, tax, retirement timing and later-life income are connected decisions, not isolated transactions.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Core pillars</span>
+        <h2>Three things decide how much you get out of retirement.</h2>
+        <p>
+          Two people can retire with identical savings and end up with very different retirements. Almost all of the gap comes
+          down to these three areas.
+        </p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="card reveal">
+          <div class="card-number">01</div>
+          <h3>Turning the pot into income</h3>
+          <p>Using your accounts strategically, managing withdrawals and Roth conversions rather than taking large sums all at once, and sequencing withdrawals across 401(k)s, IRAs and other accounts so your money lasts longer.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-number">02</div>
+          <h3>Getting the timing right</h3>
+          <p>The decisions with the greatest impact are rarely made in the final months before you stop work. Ten years out, five years out and two years out each open different options, and closing them is easier than reopening them.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-number">03</div>
+          <h3>Passing on more of what you built</h3>
+          <p>Estate taxes can take up to 40% of an estate above the federal exemption, and some states add their own estate or estate tax. Understanding your exemptions, gifting, and how your accounts align with your legacy intentions can reduce much of that exposure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="section-head reveal">
+        <span class="eyebrow">Briefings</span>
+        <h2>The ideas that make the biggest difference to what you end up with.</h2>
+        <p>
+          Practical commentary on income strategy, tax, timing and legacy, written around the decisions you will actually have
+          to make.
+        </p>
+      </div>
+
+      <div class="insight-grid">
+        <article class="card insight-card reveal">
+          <div class="tag-row">
+            <span class="tag">Income Strategy</span>
+            <span>12 min read</span>
+          </div>
+          <h3>Five ways to strengthen your retirement income</h3>
+          <p>Using your accounts strategically, planning when and how you draw your 401(k) and IRA, using Roth accounts for flexibility, structuring investments by purpose, and sequencing what you draw from first.</p>
+          <button class="read-more" type="button" data-open-form data-resource="Briefing: five ways to strengthen retirement income">Request this briefing</button>
+        </article>
+
+        <article class="card insight-card reveal">
+          <div class="tag-row">
+            <span class="tag">Common Mistakes</span>
+            <span>10 min read</span>
+          </div>
+          <h3>The mistakes that quietly cost people years of income</h3>
+          <p>Taking large withdrawals too early, drawing in the wrong order, underestimating how long retirement lasts, and selling into a downturn. Every one of them is avoidable.</p>
+          <button class="read-more" type="button" data-open-form data-resource="Briefing: common mistakes">Request this briefing</button>
+        </article>
+
+        <article class="card insight-card reveal">
+          <div class="tag-row">
+            <span class="tag">Estate Tax</span>
+            <span>11 min read</span>
+          </div>
+          <h3>Passing on more of what you have built</h3>
+          <p>Knowing your estate tax exemptions, making use of gifting and exemptions, where trusts fit, and how the way you draw your accounts changes what reaches your beneficiaries.</p>
+          <button class="read-more" type="button" data-open-form data-resource="Briefing: estate tax">Request this briefing</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-head reveal">
+        <span class="eyebrow">Guides</span>
+        <h2>Guides written to help you get more out of your retirement.</h2>
+        <p>
+          In-depth guides, planning frameworks and checklists built to support independent learning and better-quality
+          decisions.
+        </p>
+      </div>
+
+      <div class="resource-grid">
+        <article class="card resource-card featured reveal">
+          <span class="tag">Featured guide</span>
+          <h3 style="font-size:1.7rem; margin-top:18px;">How to maximise your retirement</h3>
+          <p>
+            Building a retirement savings is only half the story. This guide sets out how a considered income strategy can make your
+            retirement more predictable, more flexible and more resilient, for the lifestyle you want to keep.
+          </p>
+          <div class="meta">
+            <span>Full guide</span>
+            <span>Income, timing, tax and legacy</span>
+            <span>Free to download</span>
+          </div>
+          <button class="read-more" type="button" data-open-form data-resource="Guide: How to maximise your retirement">Request this guide</button>
+        </article>
+
+        <article class="card resource-card reveal">
+          <span class="tag">Checklist</span>
+          <h3>Your retirement income checklist</h3>
+          <p>Eight questions that gauge how ready your plan really is, from whether you know the income you'll need to whether you hold a cash buffer. If you can't confidently tick every box, it's worth a conversation.</p>
+          <div class="meta">
+            <span>Eight-point check</span>
+            <span>Five minutes</span>
+          </div>
+          <button class="read-more" type="button" data-open-form data-resource="Retirement income checklist">Request this checklist</button>
+        </article>
+
+        <article class="card resource-card reveal">
+          <span class="tag">Timeline</span>
+          <h3>When to start planning</h3>
+          <p>What to be doing ten years out, five years out, two years out, at retirement and throughout it. The earlier a strategy is in place, the more options stay open to you.</p>
+          <div class="meta">
+            <span>Planning timeline</span>
+            <span>Five stages</span>
+          </div>
+          <button class="read-more" type="button" data-open-form data-resource="Planning timeline">Request this timeline</button>
+        </article>
+
+        <article class="card resource-card reveal">
+          <span class="tag">Worked example</span>
+          <h3>What good actually looks like</h3>
+          <p>A couple at 62 with the same savings, shown two ways: without a strategy, and with a considered plan. Same money, materially different retirement.</p>
+          <div class="meta">
+            <span>Side-by-side comparison</span>
+            <span>Illustrative only</span>
+          </div>
+          <button class="read-more" type="button" data-open-form data-resource="Worked example">Request this example</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>A simple route from financial education to better-quality next steps.</h2>
+        <p>
+          Better retirement decisions start with better-informed readers. The journey here is designed to build clarity before
+          action.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <article class="step reveal">
+          <div class="step-index">01</div>
+          <h3>Start with perspective</h3>
+          <p>Begin with independent educational content that frames the major issues clearly and without unnecessary noise.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">02</div>
+          <h3>Explore the relevant themes</h3>
+          <p>Move into deeper content on retirement planning, tax efficiency, retirement income and long-term structure.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">03</div>
+          <h3>Build confidence</h3>
+          <p>Use practical guides and tools to improve understanding and identify where stronger planning may be needed.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">04</div>
+          <h3>Take the next step</h3>
+          <p>When appropriate, move from education into a separate conversation about support, advice, or specialist introductions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Answers to common questions about the information on this page.</h2>
+        <p>
+          These clarify the role of the site, the purpose of the content, and how educational material differs from personal
+          advice.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <article class="faq-item reveal">
+          <h3>Is this page giving regulated financial advice?</h3>
+          <p>No. The content is general information, education and guidance. Personal recommendations require an individual advice process.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Who is this content designed for?</h3>
+          <p>Readers who want a clearer understanding of retirement planning, tax-aware thinking, retirement strategy and later-life financial decisions.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Why focus so heavily on education?</h3>
+          <p>Because stronger outcomes usually begin with better questions, clearer understanding, and more confidence before decisions are made.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>What happens if I want personal help?</h3>
+          <p>If you ask us to, we introduce you to one independent financial adviser firm authorised and regulated by the SEC or the relevant state securities regulator, and we tell you which firm. There is no charge to you and no obligation to proceed.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>How do you make money?</h3>
+          <p>Adviser firms pay us for arranging the introduction. That does not increase what you pay, and we are not paid according to what you buy or how much you invest. Full detail in our <a href="/terms.html">Terms of Use</a>.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>What happens to my details?</h3>
+          <p>They are used to send you what you asked for and, where you ask us to, to arrange an introduction. We never sell them or pass them to a panel of firms. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div class="cta-panel reveal">
+        <span class="eyebrow">Next step</span>
+        <h2>Ready to explore more thoughtful financial guidance?</h2>
+        <p>
+          Request access to the guides and tools, or tell us what you are trying to work out and we will point you at the right
+          starting place.
+        </p>
+        <div class="button-row" style="margin-top:24px;">
+          <button class="button-primary" type="button" data-open-form data-resource="Footer CTA">Get access</button>
+          <a class="button-secondary" href="mailto:info@yourretirementinsights.com">info@yourretirementinsights.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Your Retirement Insights</div>
+        <p>
+          Expert financial education, independent insights and wealth management guidance.
+        </p>
+        <p style="margin-top:12px;">
+          We are not a registered investment adviser and we do not provide financial advice or
+          personal recommendations. Content on this site is general information only. Where you ask us to, we introduce you to
+          independent financial advisers who are registered investment advisers. The value of investments can fall as well
+          as rise and you may get back less than you invested. Tax treatment depends on your individual circumstances and may
+          change in future. Full details in our <a href="/terms.html" style="color:var(--gold);">Terms of Use</a>.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">Approach</a>
+        <a href="#insights">Briefings</a>
+        <a href="#resources">Guides</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact">Contact</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <span id="yearline">© 2026 Your Retirement Insights</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- enquiry modal -->
+<div class="modal" id="enquiry-modal" role="dialog" aria-modal="true" aria-labelledby="enquiry-title" hidden>
+  <div class="modal-backdrop" data-close-form></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-form aria-label="Close">&times;</button>
+
+    <div id="enquiry-form-wrap">
+      <span class="eyebrow">Request access</span>
+      <h2 id="enquiry-title">Get your insights</h2>
+      <p id="enquiry-sub">Tell us where to send it and we'll get it straight over to you.</p>
+
+      <form id="enquiry-form" novalidate>
+        <div class="field-grid">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+          </div>
+          <div class="field full">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field full">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field full">
+            <label for="assets">Investable assets</label>
+            <select id="assets" name="assets" required>
+              <option value="" disabled selected>Please select a range</option>
+              <option>Under $100,000</option>
+              <option>$100,000 – $250,000</option>
+              <option>$250,000 – $500,000</option>
+              <option>$500,000 – $1,000,000</option>
+              <option>Over $1,000,000</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="hidden" id="resource" name="resource" value="">
+
+        <!-- Honeypot. Hidden from people, irresistible to bots. Anything that
+             fills it is dropped before we send. -->
+        <div aria-hidden="true" style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="button-primary" type="submit">Get access</button>
+
+        <div class="form-error" id="form-error" role="alert"></div>
+
+        <p class="form-note">
+          Your information is secure and will only be used to provide you with relevant financial insights.
+          See our <a href="/privacy.html">Privacy Policy</a>.
+        </p>
+      </form>
+    </div>
+
+    <div class="form-success" id="form-success">
+      <div class="tick" aria-hidden="true">✓</div>
+      <h2>Thank you</h2>
+      <p>We've got your details and will be in touch shortly with what you asked for.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Google Apps Script web app URL. It appends the lead to the Google Sheet and
+   forwards it to GoHighLevel server-side, so the CRM webhook is never exposed
+   in this file. While this is empty the form falls back to opening a
+   pre-filled email, so no enquiry is ever silently lost. */
+const FORM_ENDPOINT = "";
+
+const modal = document.getElementById("enquiry-modal");
+const form = document.getElementById("enquiry-form");
+const formWrap = document.getElementById("enquiry-form-wrap");
+const success = document.getElementById("form-success");
+const errorBox = document.getElementById("form-error");
+const titleEl = document.getElementById("enquiry-title");
+const subEl = document.getElementById("enquiry-sub");
+const resourceField = document.getElementById("resource");
+let lastFocused = null;
+let scrollLockY = 0;
+
+/* Locking with overflow:hidden alone leaves the page visually offset when the
+   modal is opened from partway down. Pin the body instead and restore after. */
+function lockScroll() {
+  scrollLockY = window.scrollY;
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollLockY}px`;
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.overflow = "hidden";
+}
+
+function unlockScroll() {
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.overflow = "";
+  window.scrollTo(0, scrollLockY);
+}
+
+function openModal(trigger) {
+  lastFocused = trigger;
+  const resource = trigger.getAttribute("data-resource") || "General enquiry";
+  resourceField.value = resource;
+
+  if (resource.startsWith("Briefing:") || resource.indexOf("guide") > -1 || resource.indexOf("checklist") > -1 || resource.indexOf("planner") > -1 || resource.indexOf("explainer") > -1) {
+    titleEl.textContent = "Request this resource";
+    subEl.textContent = "Tell us where to send it and we'll get it straight over to you.";
+  } else {
+    titleEl.textContent = "Get your insights";
+    subEl.textContent = "Tell us a little about your situation and we'll send you the most relevant material.";
+  }
+
+  formWrap.style.display = "";
+  success.classList.remove("is-shown");
+  errorBox.classList.remove("is-shown");
+  modal.hidden = false;
+  modal.classList.add("is-open");
+  lockScroll();
+  document.getElementById("firstName").focus({ preventScroll: true });
+}
+
+function closeModal() {
+  modal.classList.remove("is-open");
+  modal.hidden = true;
+  unlockScroll();
+  if (lastFocused) lastFocused.focus({ preventScroll: true });
+}
+
+document.querySelectorAll("[data-open-form]").forEach((el) => {
+  el.addEventListener("click", () => openModal(el));
+});
+
+document.querySelectorAll("[data-close-form]").forEach((el) => {
+  el.addEventListener("click", closeModal);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+});
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  errorBox.classList.remove("is-shown");
+
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  // Honeypot tripped: show the normal success state and send nothing.
+  if (data.company) {
+    formWrap.style.display = "none";
+    success.classList.add("is-shown");
+    form.reset();
+    return;
+  }
+  delete data.company;
+
+  if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.assets) {
+    errorBox.textContent = "Please complete every field so we can get this to you.";
+    errorBox.classList.add("is-shown");
+    return;
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+    errorBox.textContent = "That email address doesn't look right. Please check it and try again.";
+    errorBox.classList.add("is-shown");
+    return;
+  }
+
+  const button = form.querySelector("button[type=submit]");
+  button.disabled = true;
+  button.textContent = "Sending…";
+
+  const showSuccess = () => {
+    formWrap.style.display = "none";
+    success.classList.add("is-shown");
+    form.reset();
+    button.disabled = false;
+    button.textContent = "Get access";
+  };
+
+  if (!FORM_ENDPOINT) {
+    const body = `Resource: ${data.resource}\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone}\nInvestable assets: ${data.assets}`;
+    window.location.href = `mailto:info@yourretirementinsights.com?subject=${encodeURIComponent("Website enquiry: " + data.resource)}&body=${encodeURIComponent(body)}`;
+    showSuccess();
+    return;
+  }
+
+  try {
+    /* text/plain keeps this a "simple" request, so the browser skips the CORS
+       preflight that Apps Script web apps do not answer. */
+    data.page = window.location.href;
+    data.submittedAt = new Date().toISOString();
+
+    const res = await fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(data)
+    });
+    if (!res.ok) throw new Error("Bad response");
+    showSuccess();
+  } catch (err) {
+    errorBox.textContent = "Something went wrong sending that. Please email info@yourretirementinsights.com and we'll sort it.";
+    errorBox.classList.add("is-shown");
+    button.disabled = false;
+    button.textContent = "Get access";
+  }
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add("is-visible");
+  });
+}, { threshold: 0.18 });
+
+document.querySelectorAll(".reveal").forEach((element) => {
+  if (!element.classList.contains("is-visible")) observer.observe(element);
+});
+
+document.getElementById("yearline").textContent = `© ${new Date().getFullYear()} Your Retirement Insights`;
+</script>
+</body>
+</html>

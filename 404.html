@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | Your Retirement Insights</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #241e10;
+  --ink-soft: #675a31;
+  --navy: #b99928;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(185, 153, 40, 0.22), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(125, 101, 18, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffcf4 0%, #f8f1dc 42%, #fcf8ef 100%);
+  line-height: 1.6;
+}
+
+img { display: block; max-width: 100%; }
+
+.logo { height: 110px; width: auto; margin-bottom: 26px; }
+
+.code {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  line-height: 1.02;
+  font-weight: 700;
+  margin: 12px 0 14px;
+  text-wrap: balance;
+}
+
+p {
+  max-width: 46ch;
+  color: var(--ink-soft);
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.button-primary:hover, .button-primary:focus-visible {
+  background: #c7a534;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 560px) {
+  .logo { height: 84px; }
+}
+</style>
+</head>
+<body>
+  <a href="/" aria-label="Your Retirement Insights home">
+    <img class="logo" src="/assets/logo.png" alt="Your Retirement Insights logo">
+  </a>
+  <span class="code">Error 404</span>
+  <h1>That page isn't here.</h1>
+  <p>The link may be out of date, or the page may have moved. Everything else is still where you left it.</p>
+  <a class="button-primary" href="/">Back to the homepage</a>
+</body>
+</html>
