@@ -1087,7 +1087,7 @@ footer {
         <a href="#resources">Guides</a>
         <a href="#faq">Questions</a>
       </div>
-      <button class="nav-cta" type="button" data-open-form data-resource="General enquiry">Get access</button>
+      <button class="nav-cta" type="button" data-open-form data-resource="General inquiry">Get access</button>
       <details class="nav-menu">
         <summary class="nav-toggle" aria-label="Open navigation menu"><span></span></summary>
         <div class="nav-dropdown">
@@ -1176,7 +1176,7 @@ footer {
             “The costliest retirement decisions are rarely dramatic. They are quiet, reversible for a while, and then suddenly not.”
           </blockquote>
           <p>
-            Our aim is to help you understand the trade-offs behind each choice, recognise which ones have a deadline attached,
+            Our aim is to help you understand the trade-offs behind each choice, recognize which ones have a deadline attached,
             and arrive at any conversation about advice already knowing what you want to ask.
           </p>
         </article>
@@ -1283,9 +1283,9 @@ footer {
       <div class="resource-grid">
         <article class="card resource-card featured reveal">
           <span class="tag">Featured guide</span>
-          <h3 style="font-size:1.7rem; margin-top:18px;">How to maximise your retirement</h3>
+          <h3 style="font-size:1.7rem; margin-top:18px;">How to maximize your retirement</h3>
           <p>
-            Building a retirement savings is only half the story. This guide sets out how a considered income strategy can make your
+            Building up your retirement savings is only half the story. This guide sets out how a considered income strategy can make your
             retirement more predictable, more flexible and more resilient, for the lifestyle you want to keep.
           </p>
           <div class="meta">
@@ -1293,7 +1293,7 @@ footer {
             <span>Income, timing, tax and legacy</span>
             <span>Free to download</span>
           </div>
-          <button class="read-more" type="button" data-open-form data-resource="Guide: How to maximise your retirement">Request this guide</button>
+          <button class="read-more" type="button" data-open-form data-resource="Guide: How to maximize your retirement">Request this guide</button>
         </article>
 
         <article class="card resource-card reveal">
@@ -1390,7 +1390,7 @@ footer {
         </article>
         <article class="faq-item reveal">
           <h3>What happens if I want personal help?</h3>
-          <p>If you ask us to, we introduce you to one independent financial adviser firm authorised and regulated by the SEC or the relevant state securities regulator, and we tell you which firm. There is no charge to you and no obligation to proceed.</p>
+          <p>If you ask us to, we introduce you to one independent financial adviser firm registered with the SEC or the relevant state securities regulator, and we tell you which firm. There is no charge to you and no obligation to proceed.</p>
         </article>
         <article class="faq-item reveal">
           <h3>How do you make money?</h3>
@@ -1559,7 +1559,7 @@ function unlockScroll() {
 
 function openModal(trigger) {
   lastFocused = trigger;
-  const resource = trigger.getAttribute("data-resource") || "General enquiry";
+  const resource = trigger.getAttribute("data-resource") || "General inquiry";
   resourceField.value = resource;
 
   if (resource.startsWith("Briefing:") || resource.indexOf("guide") > -1 || resource.indexOf("checklist") > -1 || resource.indexOf("planner") > -1 || resource.indexOf("explainer") > -1) {
@@ -1639,7 +1639,7 @@ form.addEventListener("submit", async (e) => {
 
   if (!FORM_ENDPOINT) {
     const body = `Resource: ${data.resource}\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone}\nInvestable assets: ${data.assets}`;
-    window.location.href = `mailto:info@yourretirementinsights.com?subject=${encodeURIComponent("Website enquiry: " + data.resource)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@yourretirementinsights.com?subject=${encodeURIComponent("Website inquiry: " + data.resource)}&body=${encodeURIComponent(body)}`;
     showSuccess();
     return;
   }
