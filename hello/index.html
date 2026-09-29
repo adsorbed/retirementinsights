@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A quick hello from Cynthia</title>
+<meta name="description" content="A short introduction from Cynthia ahead of your appointment.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/favicon.png">
+<meta property="og:title" content="A quick hello from Cynthia">
+<meta property="og:description" content="A short introduction from Cynthia ahead of your appointment.">
+<meta property="og:image" content="https://yourretirementinsights.com/assets/video/cynthia-intro-poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241e10; --ink-soft:#675a31; --gold:#b99928; --gold-deep:#7d6512;
+    --gold-soft:#e2c768; --line:rgba(84,64,12,.16); --shadow:0 24px 60px rgba(84,64,12,.14);
+    --radius-xl:30px; --radius-lg:22px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#fffcf4; color:var(--ink);
+    font-family:"Montserrat",sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .bg{
+    background:
+      radial-gradient(1100px 520px at 50% -10%, #f8f1dc 0%, rgba(248,241,220,0) 70%),
+      #fffcf4;
+    min-height:100vh; padding:32px 20px 64px;
+  }
+  .wrap{max-width:660px;margin:0 auto;text-align:center}
+  .logo{width:230px;max-width:62%;height:auto;margin:8px auto 34px;display:block}
+  h1{
+    font-family:"League Spartan",sans-serif; font-weight:800;
+    font-size:clamp(28px,5.4vw,42px); line-height:1.12; letter-spacing:-.01em;
+    margin:0 0 14px;
+  }
+  .kicker{
+    font-family:"League Spartan",sans-serif; font-weight:700; letter-spacing:.16em;
+    text-transform:uppercase; font-size:12px; color:var(--gold-deep); margin:0 0 14px;
+  }
+  .lede{font-size:17px;color:var(--ink-soft);margin:0 auto 32px;max-width:48ch}
+  .player{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius-xl);
+    box-shadow:var(--shadow); padding:16px; margin:0 auto 30px; max-width:420px;
+  }
+  video{width:100%;height:auto;display:block;border-radius:var(--radius-lg);background:#241e10}
+  .sig{
+    font-family:"League Spartan",sans-serif;font-weight:700;font-size:19px;margin:0 0 4px;
+  }
+  .sig-sub{font-size:14px;color:var(--ink-soft);margin:0}
+  .rule{height:1px;background:var(--line);border:0;margin:40px auto 24px;max-width:180px}
+  .foot{font-size:13px;color:var(--ink-soft);margin:0}
+  .foot a{color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  @media (prefers-color-scheme: dark){
+    body{background:#17130a;color:#f6efdd}
+    .bg{background:radial-gradient(1100px 520px at 50% -10%, #241e10 0%, rgba(36,30,16,0) 70%), #17130a}
+    .player{background:#211b0f;border-color:rgba(226,199,104,.22)}
+    .lede,.sig-sub,.foot{color:#c9bc9a}
+    .kicker{color:var(--gold-soft)}
+  }
+</style>
+</head>
+<body>
+  <div class="bg">
+    <div class="wrap">
+      <img class="logo" src="../assets/logo.png" alt="Your Retirement Insights">
+      <p class="kicker">Before we speak</p>
+      <h1>A quick hello from Cynthia</h1>
+      <p class="lede">Thanks for booking a time to talk. Cynthia recorded this short introduction so you know who you&rsquo;ll be speaking with.</p>
+
+      <div class="player">
+        <video controls playsinline preload="metadata"
+               poster="../assets/video/cynthia-intro-poster.jpg">
+          <source src="../assets/video/cynthia-intro.mp4" type="video/mp4">
+          Your browser cannot play this video.
+          <a href="../assets/video/cynthia-intro.mp4">Download it here</a>.
+        </video>
+      </div>
+
+      <p class="sig">Cynthia Sittig</p>
+      <p class="sig-sub">Looking forward to speaking with you.</p>
+
+      <hr class="rule">
+      <p class="foot">Questions before we talk? Just reply to the email &mdash; or visit <a href="https://yourretirementinsights.com/">yourretirementinsights.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
